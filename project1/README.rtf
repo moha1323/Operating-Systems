@@ -1,0 +1,47 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww28300\viewh14380\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Name: Yahya Mohamed\
+Class: ICS 462-50\
+Title: Project 1\
+Institution: Metropolitan State University\
+Instructor: Mathew Nyamagwa\
+\
+\
+Project Description:\
+	Add a system call that returns the number of system calls made since the system booted on success or -1 on failure. The system call should be named getsyscallinfo(). You will need to add a user program to the OS.\
+\
+Files Modified: \
+/Users/yahyamohamed/ICS462/CODE/project1/xv6-riscv-private/kernel/syscall.h \
+	^ Added the system call name to the header file.\
+/Users/yahyamohamed/ICS462/CODE/project1/xv6-riscv-private/kernel/defs.h\
+	^ Added the function prototype (under proc.c) to the header file.\
+/Users/yahyamohamed/ICS462/CODE/project1/xv6-riscv-private/user/user.h\
+	^ Added the function prototype (under system calls) to header file. \
+/Users/yahyamohamed/ICS462/CODE/project1/xv6-riscv-private/kernel/sysproc.c\
+	^ Added the function call and the counter to this program. Also set the counter equal to -1.\
+/Users/yahyamohamed/ICS462/CODE/project1/xv6-riscv-private/user/usys.pl\
+	^ Added the system call to the file. \
+/Users/yahyamohamed/ICS462/CODE/project1/xv6-riscv-private/kernel/syscall.c\
+	^ Added the function and the counter to program. Also had the counter to increment every time the system call function is called.\
+/Users/yahyamohamed/ICS462/CODE/project1/xv6-riscv-private/Makefile\
+	^ Added my user program, the program that would print the value of the counter, to the file so I can run it when I am in the emulator.\
+\
+Files Created: \
+/Users/yahyamohamed/ICS462/CODE/project1/xv6-riscv-private/user/proj1.c\
+	^The user program that will use the function that will display the number of system calls made since the system booted on success or -1 on failure and print it to the console while in the emulator. \
+\
+How To Run:\
+1. Open Terminal\
+2. % cd ~/ICS462/CODE/project1/xv6-riscv-private\
+3. % make\
+4. % make qemu\
+5. $ proj1\
+\
+References and Sources: \
+https://www.youtube.com/watch?v=vR6z2QGcoo8&t=1052s\
+ }
